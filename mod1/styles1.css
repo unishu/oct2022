@@ -1,0 +1,68 @@
+th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table1 {
+    width: 50%;
+    height: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+table {
+    margin-left: auto; 
+    margin-right: auto;
+    
+}
+
+.secondtable {
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+.thirdtable {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: none;
+}
+
+.th, .tr {
+    border-style: 3px solid;
+}
+
+.trow {
+    font-weight: bold;
+    text-align: center;
+}
+
+.t1 {
+    border: 3px solid;
+}
+
+th {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.table td {
+    text-align: right;
+}
+
+.table td:first-child {
+    text-align: left;
+}​
+
