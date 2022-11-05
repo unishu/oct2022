@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<header>
+<body>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./form.html">Form</a>
+    </nav>
+</header>
+<main>
+<form method="POST" action="http://localhost:3000/profile">
+<div>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+</div>
+<div>
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+</div>
+<div>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+</div>
+<div>
+    <input type="checkbox" id="email" name="contact" value="email">
+    <label for="email">Email</label>
+    <input type="checkbox" id="phone" name="contact" value="phone">
+    <label for="phone">Phone</label>
+    <input type="checkbox" id="text" name="contact" value="text">
+    <label for="text">Text</label>
+</div>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="audi">Audi</option>
+    <option value="bmw">BMW</option>
+    <option value="audi">Jeep</option>
+    </select>
+    <button type="submit">Submit form</button>
+    <!-- <input type="submit" value="Submit Form">-->
+</form>
+</main>
+<footer>Copyright 2020 &copy; Mar</footer>
+</body>
+</html>
+  
