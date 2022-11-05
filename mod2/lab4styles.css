@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;      
+}
+
+header {
+    display: flex;
+    padding: 5px;
+    background: bisque;
+    justify-content:space-between;
+    position: sticky;
+    top: 0;
+}
+
+
+body, main {
+    background-color: antiquewhite;        
+}
+
+nav {
+    padding: 0 8px;
+    text-decoration: none;
+}
+
+ul, li {
+    display: flex;
+    padding: 8px;
+}
+
+
+li {
+    border-right: 1px solid;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+h1, h3 {
+    line-height: 5px;
+    text-align:center;
+    padding-top: 20px ;
+    padding-left: 90px;
+}
+
+h2 {
+    text-align: left;
+    font-size: 20px;
+    padding-top: 2px;
+}
+
+img {
+    padding-left: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+}
+
+aside {
+    width: 15%;
+    float: right;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 200px;
+    border-left: 2px solid;
+}
+
+footer {
+    clear:both;
+    text-align: center;
+    font-weight: lighter;   
+    padding: 20px; 
+    background-color: bisque;
+      
+}
+
+.float {
+    float: left;
+    width: 80%;
+    padding-left: 70px;
+    
+}
+
+.aboutme {
+    padding-left: 80px;
+}
+
+.center1 {
+    display:inline;
+    text-align: center;
+    align-content: space-between;
+    
+}
+
+.center2 {
+    text-align: center;
+    padding-left: 60px;
+    padding: 10px;
+    clear:both;
+}
+
+
+.pcenter {
+    padding-left: 50px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+    }
+}

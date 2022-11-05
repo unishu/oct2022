@@ -1,0 +1,204 @@
+<style>
+
+    * {
+        box-sizing: border-box;
+
+    }
+
+    body, header, section, aside, article, footer {
+        margin: 0;
+        padding: 10px;
+        color: white;
+    }
+
+
+    img {
+        margin-top: none;
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+    }
+
+
+    .intro {
+        background-color: slateblue;
+    }
+
+
+    .main {
+        background-color: white;
+        flex:80%;
+        color: black;
+        padding-left: 20px;
+    }
+
+
+    .article {
+        background-color: white;
+        color: black;
+    }
+
+
+    .sidebar {
+        background-color: black;
+        flex:20%;      
+        color: whitesmoke;
+        padding-left: 15px;
+    }
+   
+
+    li {
+        padding-right: 20px; 
+        list-style-type: circle;
+    }
+
+
+    h3, p {
+        line-height: 0;
+    }
+
+
+    h2 {
+        color: goldenrod;
+    }
+
+
+    hr {
+        border: 0.5px dashed rgb(133, 152, 159);
+    }
+
+
+    .footer {
+        background-color: goldenrod;
+        text-align: center;
+    }
+
+    a:hover {
+        background: aquamarine;
+        font-size: large;
+        cursor:cell;
+    }
+
+    @media screen and (min-width: 400px){
+        .flex-container {
+            display:flex;
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        .flex-container{
+            width:100%;
+            display: table;
+            flex-wrap: wrap;
+        }
+        .pinfo, .skills {
+            text-align: center;
+        }          
+    }
+
+</style> 
+<body>
+   <!-- SIDEBAR -->
+    <div class="flex-container wrapper">
+    <aside class="sidebar">
+        <h2 style="text-align:center;background: blanchedalmond;">Marlanda Mar - Resume</h2>
+        <center><img src="https://i.pinimg.com/originals/d6/b0/c8/d6b0c8cbe81b14df5affb72f99d6b6fd.png" alt="profilepic"></center>
+        <h4 style="margin-top:5px; text-align:center">Tech wizard in training</h4>
+        <h4 style="font-size:large; color:goldenrod; text-align:center; background-color:blanchedalmond;">Personal Info</h4>
+
+    <div class="pinfo">
+        <p style="line-height:1.6 ;">Phone:<br>
+        +64 021 02863709</p>
+        <p style="line-height:1.4;">E-mail: <br><a href="mailto:marlanda.mar@outlook.com">marlanda.mar@outlook.com</a></p>
+    </div><hr>
+    <div class="skills">
+        <h4 style="font-size:large;color:goldenrod; text-align:center;background-color: blanchedalmond;">Skills</h4>
+        HTML - in progress<br><br>
+        CSS - in progress<br><br>
+        Javascript - in progress<br><br>
+    </div>
+    </aside>
+
+    <!-- MAIN -->
+    <section class="main">
+    <article class="article">
+        <h2>Intro</h2>
+        <p style="text-align: left; line-height: normal;"> Driven individual devoted to client health and wellness with over 7 years of experience in the provision of physiotherapy services.
+            Well-versed in case management with good interpersonal, analytical and communication abilities. Working with varying people involves understanding 
+            requirements and needs and applying best practice strategies based on them. My passion to problem solve and help people often come together and I enjoy 
+            using my skills to benefit and make an impact on others. Looking for a new challenge and to broaden my professional horizons.</p>
+        <br><hr>
+    </article>
+
+        <h2>Experience</h2>
+        <p>January 2017 – Current</p>
+        <h3>Clinical – Senior Physiotherapist</h3>
+        <ul>
+            <li>Collaborated with multidisciplinary teams to provide rehabilitation plans, improve professional rapport, increase efficiency 
+            and effectiveness of treatment/management; worked with other members of the team to develop programs and curate each session to the 
+            client which maximized shifts and reduced unproductivity and errors.</li>
+            <li> Identify examples of good and poor practice and make suggestions of realistic improvements and ensure issues are addressed positively 
+            and handled in a constructive manner.</li>
+            <li> Took initiative in assisting colleagues when requested and when consistent with my other responsibilities and streamlined operations 
+            to reduce overtime rate.</li>
+            <li>Oversaw administration tasks, including the digitization of treatment notes, rehabilitation plans and referrals.</li>
+            <li>Manage and prioritize clinical caseloads based on assessment and treatment. </li>
+        </ul><br>
+
+        <p>November 2012 - February 2013</p>
+        <h3>Internship</h3>
+        <ul>
+            <li>Short term internship assisting a senior physiotherapist. </li>
+        </ul><br>
+
+        <p>May 2009 – Mar 2013</p>
+        <h3>AUK – Wait staff/Kitchen</h3>
+        <ul>
+            <li>Implemented sanitary food handling, holding and service protocols.</li>
+            <li>Answered phone inquiries to schedule and confirm reservations, record takeout orders, and respond to service questions. </li>
+        </ul><br>
+
+        <p>March 2009 – March 2013 </p>
+        <h3>AUK – Customer service/Attendant  </h3>
+        <ul>
+            <li>Resolved customer concerns and relayed relevant information to supervisor. </li>
+            <li>Built brand loyalty and accomplished customer satisfaction by working well with other food and customer service team members.</li>
+        </ul><br><hr><br>
+
+
+         <h2>Education</h2>
+
+         <p>Institute of Data 2022 - Ongoing</p>
+         <h3>Institute of Data Software Engineering Course</h3>
+             <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>node.js</li>
+                <li>VS code</li>
+            </ul><br>
+
+        <p>Auckland University of Technology 2009 - 2013</p>
+        <h3> Bachelor of Health Science</h3>
+            <ul>
+                <li>Physiotherapy</li>
+            </ul><br>
+            <hr>
+
+    <article class="article">
+        <h2>Skills</h2>
+            <p style="text-align: left; line-height: normal;word-wrap: break-word;"> Team Player • Knowledge and understanding of client care and 
+                needs • Excellent multitasking and time management skills • Willingness to learn new skills and expand on existing ones
+                • Adaptable </p>
+            <br>
+    </article>
+    </section>
+    </aside>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p> Created by Marlanda Mar, 2022</p>
+    </footer>
+</body>
