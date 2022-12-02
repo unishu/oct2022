@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+<style>
+
+    * { box-sizing: border-box;}
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background-image: url("oyo.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+
+    .headnav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;  
+    }
+
+    h2 {
+        padding-left: 30px;
+        float: left;
+        color: white;
+    }
+
+    .nav {
+        float: right;
+        font-size: 20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        align-content: flex-end;
+    }
+
+    li {
+        display: inline;
+        text-decoration: underline;
+    }
+
+    li a {
+        color: white;
+  
+        padding: 20px 40px;
+        text-decoration: none;
+    }
+    
+    .btn {
+        align-self: center;
+        margin-top: 430px;
+        padding-left: 500px;
+    }
+
+    .btn1 {
+        display: inline-block;
+        background-color:  rgb(30, 29, 29, 0.3);
+        width: 120px;
+        border: none;
+        padding: 10px;
+        margin-right: 20px;
+        box-shadow: 5px 8px;
+    }
+    
+    .btn2 {
+        display: inline-block;
+        background-color: rgb(30, 29, 29, 0.3);
+        border: none;
+        padding: 10px;
+        box-shadow: 5px 8px;
+    }
+
+    .btn a {
+        text-decoration: none;
+        font-size: 20px;
+        color: aquamarine;
+    }
+
+    .btn1:hover, .btn2:hover {
+        background-color: rgb(255, 255, 255, 0.3);   
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 900px) {
+        body {
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .btn {
+            margin-top: 500px;
+            margin-right: 50px;
+            display: flex;
+            position: fixed;
+        }
+
+        .btn1, .btn2 {
+            padding: 0;
+        }
+    }
+
+   @media screen and (min-width: 280px) and (max-width: 650px) {
+        body {
+            width: 100%;
+            background-size: 100%;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .btn {
+           padding: 0;
+           position: fixed;
+        }      
+    }
+    
+
+</style>
+</head>
+<body>
+    <div class="headnav">
+        <div><h2>OYO Home</h2></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="btn"> 
+        <button type="button" class="btn1"><a href="loginpg.html">LOGIN</a></button>
+        <button type="button" class="btn2"><a href="#register">REGISTER</a></button>
+    </div>  
+</body>
+</html>

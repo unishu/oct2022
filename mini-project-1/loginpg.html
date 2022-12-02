@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Build your own website lab 4"/>
+    <meta name="keywords" content="HTML"/>
+    <meta name="author" content="Marlanda Mar"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg">
+<!-- HEADER -->
+    <h1>Welcome to login!</h1>
+<!-- NAVBAR & SEARCH BAR-->
+    <div class="nav">
+        <ul>
+            <li>Navbar</li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Dropdown &#9660</a>
+                    <div class="dropdown-content">
+                        <a href="#">Blog</a>
+                        <a href="#">About Us</a>
+                        <a href="contact.html">Contact Us</a>
+                    </div>
+            </li>
+            <li><a href="#">Affiliates</a></li>
+        </ul>      
+        <form input="/action_page.php" class="search">
+            <input type="text" name="search" placeholder="Search..."><button type="submit" class="search-btn">Search</button>
+        </form>
+    </div>
+<!-- LOGIN FORM -->
+    <div class="login">
+        <h1 class="title">Enter here</h1>
+        <form action="/action_page.php" class="login-txt" method="get" target="_blank">
+        <!-- username -->
+        <div class="input">
+            <label for="email"><b>Enter username</b></label>
+            <input type="text" placeholder="username" name="email" required id="email">
+        <!-- password -->
+            <label for="psw"><b>Enter password</b></label>
+            <input type="password" placeholder="password" name="psw" id="psw" required>
+        </div>
+            <br><br><br>
+        <!-- gender -->
+            <div class="gender">
+                <div class="genderm">
+                    <label for="male" class="genderm">Male</label>
+                    <input type="radio" id="male" name="gender">
+                </div>
+                <div class="genderf">
+                    <label for="female" class="genderf">Female</label>
+                    <input type="radio" id="female" name="gender">
+                </div>
+                <div class="gendern">
+                    <label for="none" class="gendern">None</label>
+                    <input type="radio" id="none" name="gender">
+                </div>
+            </div><br><br><br>
+        <!-- login button -->
+            <div class="btn">
+                <button type="submit">LOGIN</button>
+            </div>
+        </form>
+        <!--FORM FOOTER-->
+        <div class="form footer">
+            <p>Not registered? <a href="">Create an account</a></p>
+        </div>
+        <!-- DISCLAIMERS -->
+        <div class="disclaimers">
+            <header class="dis-title">Disclaimers</header>
+                <ul class="dlist">
+                    <li>Any personal information provided when you register for alert services on the Website will be held in accordance with the 
+                        Privacy Policy available on the Website. </li><br>
+                    <li>We have the right to disable any user accounts at any time if, in our reasonable opinion, you have failed to comply with any of the 
+                        provisions of these terms of use and/or if we believe that your account is being used in an unauthorised or fraudulent manner.
+                    </li><br>
+                    <div class="blue">Information published on the Website is supplied by OYO Limited and, where indicated, by certain third parties. 
+                    </div><br>
+                    <li>Nothing in these terms of use excludes or limits our liability for death or personal injury arising from our negligence, or our fraud 
+                        or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by law.
+                    </li><br>
+                    <li>We are not responsible for the content of any other website from which you have accessed the Website or to which you may hyperlink from 
+                        the Website and cannot be held liable for any loss or damage you incur as a result thereof.
+                    </li>
+                </ul>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
