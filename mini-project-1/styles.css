@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+* {box-sizing: border-box;}
 
 body, html {
     height: 100%;
@@ -26,16 +24,13 @@ body, html {
     width: 100%;
 }
 
-.nav li {
-    float: left;  
-}
+.nav li {float: left;}
 
 .nav ul {
     background-color: rgba(255, 255, 255, 0.3);
     list-style: none;
     margin: 0;
     padding: 0;
-  
     text-align: center;
 }
 
@@ -43,7 +38,7 @@ body, html {
     border: none;
     padding-top: 12px;
     padding-right: 10px;
-    padding-left: 10px
+    padding-left: 10px;
 }
 
 li a, .dropbtn {
@@ -57,9 +52,7 @@ li a, .dropbtn {
     z-index: 1;
 }
 
-.dropbtn {
-    color: rgb(85, 81, 81);
-}
+.dropbtn {color: rgb(85, 81, 81);}
 
 li a:hover, .dropdown:hover .dropbtn {
     background-color: rgba(255, 0, 0, 0.884);
@@ -96,9 +89,7 @@ li a:hover, .dropdown:hover .dropbtn {
     padding: 5px 10px; 
 }
 
-.search input {
-    height: 30px;
-}
+.search input {height: 30px;}
 
 .search-btn {
     color: green;
@@ -119,9 +110,7 @@ li a:hover, .dropdown:hover .dropbtn {
     align-items: center;
 }
 
-h1 {
-    margin-bottom: 5px;
-}
+h1 {margin-bottom: 5px;}
 
 .login-txt {
     color: white;
@@ -140,13 +129,9 @@ h1 {
     margin: 0 auto;
 }
 
-.genderm, #male {
-    text-align: left;
-}
+.genderm, #male {text-align: left;}
 
-.gendern {
-    text-align: right;
-}
+.gendern {text-align: right;}
 
 .disclaimers {
     margin: 40px;  
@@ -161,9 +146,7 @@ h1 {
     padding-inline-start: 20px;
 }
 
-.dis-title {
-    font-size: 35px;
-}
+.dis-title {font-size: 35px;}
 
 .disclaimers li {
     text-align: left;
@@ -190,9 +173,7 @@ h1 {
         max-width: 500px;
         min-width: 120px;
     }
-    .login {
-        width: 80%;
-    }   
+    .login {width: 80%;}   
 } 
 
 @media screen and (max-width: 850px) {
@@ -201,38 +182,31 @@ h1 {
         left: 0; 
         background-position: fixed;
     }
-    .login {
-        width: fit-content;
-    }
-    .gender {
-        width: min-content;
-    }
-    .disclaimers {
-        font-size: 20px; 
-    }
-    .dis-title {
-        font-size: 40px;
-    }
+
+    .login {width: fit-content;}
+
+    .gender {width: min-content;}
+
+    .disclaimers {font-size: 20px;}
+
+    .dis-title {font-size: 40px;}
+
     .input {
         display: flex;
         flex-direction: column; 
     }
 
-    .nav {
-        width: 80%;
+    .nav {width: 80%;}
+
+    .nav li, .nav a {
+        float: none;
+        display:block;
+        margin: 0;
+        padding: 5px;
+        border: 1px solid;
     }
 
-   .nav li, .nav a {
-    float: none;
-    display:block;
-    margin: 0;
-    padding: 5px;
-    border: 1px solid;
-    }
-
-    .nav a {
-        border: none;
-    }
+    .nav a {border: none;}
 
     .dropdown:hover .dropdown-content a {
         display: block;
@@ -242,8 +216,7 @@ h1 {
     .search {
         float: none;
         margin-left: 15%;
-    }
-        
+    }     
   } 
 
 
