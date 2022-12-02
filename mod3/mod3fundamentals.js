@@ -10,7 +10,7 @@
 // h: "4" - 2 = 2
 // i: "4px" - 2 = NaN
 // j: "   -9   " + 5 = -9 5
-// k: "   -9   " - 5 = 4
+// k: "   -9   " - 5 = -14
 // l: null + 1 = 1
 // m: undefined + 1 = Nan
 // n: "  \t  \n" - 2 = -2
@@ -27,9 +27,8 @@ function questionTwo() {
 }
 
 //correct function; value returned and stored in a variable by prompt() will always be a string data type thus why 1st function worked incorrectly
-//will have to use parseInt() or parseFloat() to convert into string into numeric data
 function questionTwo() {
-    let a = parseInt(prompt("First number?", 1));
+    let a = parseInt(prompt("First number?", 1)); //use parseInt() or parseFloat() to convert into string into numeric data
     let b = parseInt(prompt("Second number?", 2));
 
     alert(a+b);
@@ -45,14 +44,16 @@ function questionTwo() {
 // f: null == "\n0\n" = false
 // g: null === +"\n0\n" = false
 
+
 /*
     4: Will an alert be shown?
-    Yes
+        Yes
 
     if ("0") {
         alert( 'Hello' );
     }
 */
+
 
 // 5: Rewrite this if using the conditional operator '?':
 function questionFive() {
@@ -65,11 +66,10 @@ function questionFive() {
     } else {
         result = 'Over';
     }
-
     console.log(result)
 }
 
-//answer
+//answer:
 function questionFive() {
     let a = 5;
     let b = 3;
@@ -82,7 +82,9 @@ function questionFive() {
 // 6: Write the delay method with arrow function, delay(func,ms)
 
 function questionSix() {
-    //Write delay arrow function here:  const delay = (func, ms) => (...arg) => setTimeout(() => func.apply(null, arg), ms)
+    //Write delay arrow function here: 
+const delay = (func, ms) => (...arg) => setTimeout(() => func.apply(null, arg), ms)
+
 
     const hello = ( who ) => console.log('Hello ' + who);
 
@@ -129,7 +131,6 @@ function questionEight() {
             return this
         }
     }
-
     //Modify the code of up, down, and showStep to make the calls chainable,
       //like this:
         ladder.up().up().down().showStep(); // 1
@@ -158,7 +159,7 @@ function questionNine() {
             this.value += +prompt('enter number?', 0 )
         }    
     }
-
+    
     let accumulator = new Accumulator(1); //initial value 1
 
     accumulator.read(); //adds the user-entered value
