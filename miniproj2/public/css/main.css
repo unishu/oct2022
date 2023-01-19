@@ -1,0 +1,105 @@
+body {
+    --color-primary: green;
+    --color-primary-dark: #007f67;
+    --color-secondary: rgb(27, 27, 235);
+    --color-error: red;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    
+    margin: 0;
+    height: 100vh;
+    font-size: 15px;
+   
+    }
+    
+    .container {
+      margin-top: 30px;
+      width: 70%;
+      background-color: ;
+      border: 1px solid;
+      color: ;
+    }
+    
+    .form-hidden {
+      display: ;
+    }
+    
+    .form > *:first-child {
+      margin-top: 0;
+    }
+    
+    .form > *:last-child {
+      margin-bottom: 0;
+    }
+    
+    .form-control:focus {
+      border-color: var(--color-primary);
+      
+    
+    }
+    .formText {
+      text-align: 
+    }
+    
+    .formLink {
+      color: var(--color-secondary);
+      text-decoration: none;
+      cursor: pointer;
+    
+    }
+    
+    .formLink:hover {
+      text-decoration: underline;
+    }
+    
+    
+    
+    .formMessage {
+      text-align: center;
+      margin-bottom: 1px;
+    
+    }
+    
+    .formMessageSuccess {
+      color: var(--color-success);
+    
+    }
+    
+    .formMessageError {
+      color: var(--color-error);
+    
+    }
+    
+    .form-control--error {
+      color: var(--color-error);
+      border-color: var(--color-error);
+    }
+    
+    .form-group_errorMsg {
+      color: var(--color-error);
+    }
+    
+    .formButton:active {
+      color: var(--color-primary-dark)
+    }
+
+    .alert-box{
+      position: absolute;
+      top: -100% ;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 150px;
+      max-width: 90%;
+      width: auto;
+      height: auto;
+      padding: 10px;
+      text-transform: capitalize;
+      background: rgb(255, 119, 119);
+      border-top: 10px solid rgb(255, 37, 37);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      color: #fff;
+      font-family: 'roboto', sans-serif;
+      text-align: center;
+      transition: 1s;
+  }

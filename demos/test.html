@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+             
+    }
+
+    .bg {
+        display: flex;
+        flex-direction: column;
+        background-image: url("oyo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        min-height: 100%;
+        min-width:100%;
+        align-items: center;
+        border: 2px solid black;        
+    }
+
+    .header {
+        border: 1px solid;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .nav {
+        border: 1px solid;
+        background-color: rgb(120, 120, 0);
+        width: 100%;   
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin-left: 5px;
+        padding-left: 5px;
+        display: inline-block;
+        word-spacing: 5px;
+        border: 2px solid;
+     
+    }
+
+    .nav li {
+        display: inline-block;  
+        border-right: 2px solid;
+        
+    }
+
+    .nav li:last-child {
+        border-right: none;
+    }
+
+    .search {
+        float: right;
+        margin-right: 10px;
+        margin-top: 15px;
+       
+        
+    }
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: black;
+        text-align: center;
+        padding-right: 6px;
+        text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: white;
+    }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: grey;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index:1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .loginbox {
+        clear: both;
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        background: black;
+        border: 2px solid;
+        text-align: center;
+        align-self: center;
+        margin: 70px;   
+        opacity: 0.4;
+        justify-items: center;
+        align-items: center;
+        width:70%;
+        justify-content: space-between;
+        
+    }
+
+    .loginbox >.disclaimers {
+        border: 1px solid;
+        background: white;
+        margin: 30px;  
+        padding: 5px;   
+       
+    }
+
+    .login-txt {
+        color: white;
+    }
+
+
+    .disclaimers li {
+        text-align: left;
+        color: black;
+    }
+
+   
+    @media screen and (min-width: 300px){
+        .bg {
+            width:100%;
+            display: flex;
+            background-size: cover;
+            background-position: absolute;
+        }
+        .disclaimers {
+            max-width: 500px;
+            min-width: 200px;
+        }
+
+        .loginbox {
+            min-width: 70%;
+        }
+    }
+
+    
+
+</style>
+<body>
+<div class="bg">
+    <!-- HEADER -->
+   
+    <div class="header">
+        <h1>WELCOME TO LOGIN</h1>
+    </div>
+
+    <!-- NAVBAR & SEARCH BAR-->
+    <div class="nav">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Affiliates</a></li>
+        <li class="dropdown">
+            <a href="#" class="dropbtn">Dropdown</a>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </li>
+        </ul>
+        
+    <div class="search">
+        <input type="text" name="search" placeholder="Search...">
+        <button type="submit">Search</button>
+    </div>
+    </div>
+
+    <!-- LOGIN FORM -->
+    <div class="loginbox">
+        <h2>Enter Here</h2>
+        
+            <form action="/action_page.php" class="login-txt">
+            <label for="email"><b>Enter username</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+        
+            <label for="psw"><b>Enter password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required><br>
+        
+            <button type="submit" class="btn">Login</button><br>
+          </form>
+
+    <div class="disclaimers">
+        <h1>Disclaimers</h1>
+        <ul class="dlist">
+            <li>It is a long established fact that a reader will be distracted by the 
+                readable content of a page when looking at its layout. The point of using 
+                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as 
+                opposed to using 'Content here, content here', making it look like readable 
+                English. </li>
+            <li>It is a long established fact that a reader will be distracted by the 
+                readable content of a page when looking at its layout. The point of using 
+                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as 
+                opposed to using 'Content here, content here', making it look like readable 
+                English.</li>
+            <li>It is a long established fact that a reader will be distracted by the 
+                readable content of a page when looking at its layout. The point of using 
+                Lorem Ipsum is that it has a more-or-less normal distribution of letters, as 
+                opposed to using 'Content here, content here', making it look like readable 
+                English.</li>
+            <li>It is a long established fact that a reader will be distracted by the 
+                readable content of a page when looking at its layout.</li>
+        </ul>
+    </div>
+    </div>
+</div>
+</body>
+</head>
+</html>

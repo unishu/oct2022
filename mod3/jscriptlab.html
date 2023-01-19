@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 3 Fundamentals</title>
+    </head>
+    <body>
+        <h1>Module 3 Fundamentals</h1>
+        <button onclick="questionTwo()">Run Question Two</button><br>
+        <button onclick="questionThree()">Run Question Three</button><br>
+        <button onclick="questionFour()">Run Question Four</button><br>
+        <button onclick="questionFive()">Run Question Five</button><br>
+        <button onclick="questionSix()">Run Question Six</button><br><br><br>
+        <button onclick="questionSeven()">Run Question Seven</button><br><br>
+        <button onclick="questionEight()">Run Question Eight</button><br><br>
+        <button onclick="questionNine()">Run Question Nine</button><br>
+    
+    <script>
+
+        function questionTwo(){
+            console.log( "" + 1 + 0);
+            console.log( "" - 1 + 0);
+            console.log(true + false);
+            console.log( 6/ "3");
+            console.log("2" * "3");
+            console.log(4 + 5 + "px");
+            console.log("$" + 4 + 5);
+            console.log("4" - 2);
+            console.log("4px" - 2);
+            console.log(" -9 " + 5);
+            console.log(" -9 " - 5);
+            console.log(null + 1);
+            console.log(undefined + 1);
+            console.log("\t\n" - 2)     
+        }
+
+
+        function questionThree(){
+            let a = parseInt(prompt("First number?", 1));
+            let b = parseInt(prompt("Second number?", 2));
+
+            alert(a+b);
+        }
+
+
+
+        function questionFour(){
+            console.log(5>4);
+            console.log("apple" > "pineapple");
+            console.log("2" > "12");
+            console.log(undefined == null);
+            console.log(undefined === null);
+            console.log(null == "\n0\n");
+            console.log(null === +"\n0\n")
+        }
+           
+        
+
+        function questionFive(){
+            if ("0") {
+                alert('Hello');
+            }
+        }
+
+
+        function questionSix() {
+            let a = 5;
+            let b = 3;
+            let result =
+            (a+b < 4)? "Below" : "Over"
+            console.log(result);
+           
+        }
+
+     
+        
+
+
+        function questionEight() {
+            let ladder = {
+                step: 0,
+                up() {
+                this.step++;
+                return this
+            },
+                down() {
+                this.step--;
+                return this
+            },
+                showStep: function() { 
+                console.log( this.step )
+                return this
+            }
+        }
+         ladder.up().up().down().showStep(); // 1
+    }
+    
+
+    
+    //Write constructor function here
+    function Accumulator(startingValue){
+        this.value = startingValue,
+        this.read = function(){
+            this.value += +prompt('enter number?', 0 )
+        }    
+    }
+
+    let accumulator = new Accumulator(1); //initial value 1
+
+    accumulator.read(); //adds the user-entered value
+
+    accumulator.read(); //adds the user-entered value
+
+    console.log(accumulator.value); // shows the sum of these values
+
+
+
+       
+        
+
+
+
+    </script>
+    </body>
+</html>
